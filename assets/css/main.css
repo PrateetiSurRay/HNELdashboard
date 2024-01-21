@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto&family=Source+Sans+3&display=swap");
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px 40px;
+}
+
+.primary-cards {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 100px;
+}
+.primary-cards .custom-card {
+  flex: 1;
+  border-radius: 8px;
+  position: relative;
+  margin: 0 20px;
+  padding: 10px;
+}
+.primary-cards .custom-card:nth-child(1) {
+  background: linear-gradient(to bottom, #25A4C9, #fff);
+}
+.primary-cards .custom-card:nth-child(1) .text {
+  color: #00546D;
+}
+.primary-cards .custom-card:nth-child(2) {
+  background: linear-gradient(to bottom, #55B92E, #fff);
+}
+.primary-cards .custom-card:nth-child(2) .text {
+  color: #1F7100;
+}
+.primary-cards .custom-card:nth-child(3) {
+  background: linear-gradient(to bottom, #E65C62, #fff);
+}
+.primary-cards .custom-card:nth-child(3) .text {
+  color: #790005;
+}
+.primary-cards .custom-card:nth-child(4) {
+  background: linear-gradient(to bottom, #F8A920, #fff);
+}
+.primary-cards .custom-card:nth-child(4) .text {
+  color: #5F3C00;
+}
+.primary-cards .custom-card .icon {
+  margin-top: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.primary-cards .custom-card .text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.secondary-cards {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+.secondary-cards .card-row {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+}
+.secondary-cards .custom-card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2078431373);
+  backdrop-filter: blur(4px);
+}
+.secondary-cards .card {
+  flex: var(--card-width, 1);
+  margin: 10px;
+  height: 146px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(4px);
+}
+.secondary-cards .card-body {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.secondary-cards .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  word-wrap: break-word;
+}
+.secondary-cards .card-text {
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.card-container {
+  gap: 24px;
+  overflow-x: scroll;
+}
+.card-container .scrollable-x::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.card-container .custom-card {
+  background-color: #fff;
+  border: #F1F1F1 1px solid;
+  border-radius: 8px;
+}
+.card-container .top-column {
+  background-color: rgba(105, 97, 206, 0.062745098);
+  color: #6961CE;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+.card-container .top-column .card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.card-container .top-column .card-text {
+  font-size: 14px;
+}
+.card-container .bottom-columns {
+  margin: 10px;
+}
+.card-container .bottom-columns .col-md-4 {
+  padding: 10px;
+}
+.card-container .bottom-columns .col-md-4 .card-body {
+  background-color: rgba(105, 97, 206, 0.1);
+  color: #6a1b9a;
+}
+.card-container .bottom-columns .col-md-4 .card-body .card-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.card-container .bottom-columns .col-md-4 .card-body .card-text {
+  font-size: 14px;
+}
+.card-container .bottom-columns .col-md-4:hover .card-body {
+  background-color: #ce93d8;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  position: relative;
+  background-size: cover;
+}
+
+.background {
+  position: fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the slider behind other elements */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity as needed */
+}
+
+.dashboard-container {
+  background-color: #F7f7f7;
+}
+.dashboard-container .row {
+  background-color: #fff;
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto&family=Source+Sans+3&display=swap');
+*{
+    font-family: "Inter", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main-container{
+    position: relative;
+    background-size: cover;
+}
+.background {
+    position: fixed;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the slider behind other elements */
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity as needed */
+  }

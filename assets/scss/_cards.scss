@@ -1,0 +1,164 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:30px 40px;
+  }
+  .primary-cards{
+    display: flex;
+    flex-direction: row;
+    padding:30px 100px;
+  .custom-card {
+    flex: 1;
+    border-radius: 8px;
+    position: relative;
+    margin: 0 20px;
+    padding:10px;
+    &:nth-child(1) {
+      background: linear-gradient(to bottom,$blue,#fff);
+      .text{
+        color: $primary-color;
+      }
+    }
+  
+    &:nth-child(2) {
+      background: linear-gradient(to bottom, $green, #fff);
+      .text{
+        color: $dark-green;
+      }
+    }
+  
+    &:nth-child(3) {
+      background: linear-gradient(to bottom, $red,#fff);
+      .text{
+        color: $dark-red;
+      }
+    }
+  
+    &:nth-child(4) {
+      background: linear-gradient(to bottom, $yellow,#fff);
+      .text{
+        color: $dark-yellow;
+      }
+    }
+  
+    .icon {
+      margin-top:30px;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+  
+    .text {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
+}
+.secondary-cards{
+  display: flex;
+  flex-direction: column;
+  padding:0 30px;
+  .card-row {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+
+  }
+  .custom-card{
+    display : flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #ffffff35;
+    backdrop-filter: blur(4px);
+  }
+
+  .card {
+    flex: var(--card-width, 1);
+    margin: 10px;
+    height:146px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(4px);
+  }
+  
+  .card-body {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-title {
+    font-size: 16px;
+    font-weight:600;
+    color: #fff;
+    word-wrap: break-word;
+  }
+  
+  .card-text {
+    font-size: 32px;
+    font-weight:500;
+    color: #fff;
+  }
+}
+.card-container{
+  gap:24px;
+  overflow-x:scroll;
+  .scrollable-x::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera */
+    }
+  
+  .custom-card {
+    background-color: #fff;
+    border: $border-color 1px solid;
+    border-radius: 8px;
+  }
+  
+  .top-column {
+    background-color: $purple-background;
+    color: $purple; 
+    padding: 20px;
+    margin:10px;
+    text-align: center;
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .card-text {
+      font-size: 14px;
+    }
+  }
+
+  .bottom-columns {
+    margin: 10px;
+
+    .col-md-4 {
+      padding: 10px;
+  
+      .card-body {
+        background-color: rgba(105, 97, 206, 0.10);
+        color: $main-color; 
+  
+        .card-title {
+          font-size: 16px;
+          font-weight: bold;
+        }
+  
+        .card-text {
+          font-size: 14px;
+        }
+      }
+  
+      // Add hover effect if desired
+      &:hover {
+        .card-body {
+          background-color: $tertiary-color;
+        }
+      }
+    }
+  }
+}
