@@ -1,23 +1,82 @@
 
 //color
 $primary-color :#00546D;
+$table-header:#243A50;
+$table-shade1:#243A5010;
+$table-shade2:#243A5004;
 $blue: #25A4C9;
+$blue-background: #25A4C910;
 $dark-blue: #4D8CF8;
+$dark-blue-background: #4D8CF810;
 $dark-green: #1F7100;
 $green:#55B92E;
 $dark-red: #790005;
-$red: #E65C62;
+$pink: #E56590;
+$pink-background: #E5659010;
 $dark-yellow: #5F3C00;
 $yellow:#F8A920;
 $purple:#6961CE;
 $purple-background:#6961CE10;
 $red:#E65C62;
+$red-background:#E65C6210;
 $orange:#F49C79;
+$orange-background:#F49C7910;
 $background-color: #F7f7f7;
 $border-color: #F1F1F1;
+$text:#676767;
 
-
-$main-color: #6a1b9a; // Main purple color
-$secondary-color: #9c27b0; // Secondary shade
-$tertiary-color: #ce93d8; // Tertiary shade
+.purple{
+    color:$purple;
+    background-color: $purple-background;
+}
+.red{
+    color:$red;
+    background-color: $red-background;
+}
+.blue{
+    color:$blue;
+    background-color: $blue-background;
+}
+.pink{
+    color:$pink;
+    background-color: $pink-background;
+}
+.orange{
+    color:$orange;
+    background-color: $orange-background;
+}
+.dark-blue{
+    color:$dark-blue;
+    background-color: $dark-blue-background;
+}
+.bullet-icon{
+    background-color:$primary-color;
+}
+.purple-icon{
+    background-color:$purple;
+}
+.red-icon{
+    background-color:$red;
+}
+.blue-icon{
+    background-color:$blue;
+}
+.orange-icon{
+    background-color:$orange;
+}
+.pink-icon{
+    background-color:$pink;
+}
+.dark-blue-icon{
+    background-color:$dark-blue;
+}
+.card-border{
+    border:$border-color 1px solid;
+    border-radius: 8px;
+}
+.row-internal{
+    background-color: $purple-background;
+    border-radius: 8px;
+    margin:30px;
+}
 
