@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HNEL Dashboard</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+     <!-- main container -->
+     <div class="dashboard-internal-container">
+          <!-- breadcrumb nav -->
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="dashboard.html">Health Indicators</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Adolescents detected with anemia</li>
+            </ol>
+          </nav>
+          <div class="sub-header">INDICATORS</div>
+          <!-- nav-tab structure -->
+           <div class="dashboard-wrapper m-3">
+          <div class="card-row card-border mt-4">
+            <div class="title">
+                    <span class="bullet-icon"></span>
+                    <span class="card-title ml-3">Distribution of Anemia</span>
+              </div>
+              <div class="d-flex mx-2 ">
+                    <div class="nav flex-column nav-pills me-3 col-md-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <button class="nav-link m-0" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="false"> 
+                        <div class="card-body blue column">
+                            <h6 class="card-subtext">TOTAL</h6>
+                            <p class="card-text">197392</p>
+                            </div>
+                      </button>
+                      <button class="nav-link active" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="true" style="margin:0"> 
+                        <div class="card-body column">
+                        <h6 class="card-subtext">MILD</h6>
+                        <p class="card-text">197392</p>
+                        </div>
+                     </button>
+                      <button class="nav-link m-0" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"> 
+                        <div class="card-body blue column">
+                        <h6 class="card-subtext">MODERATE</h6>
+                        <p class="card-text">197392</p>
+                        </div>
+                      </button>
+                      <button class="nav-link m-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"> 
+                        <div class="red card-body column">
+                        <h6 class="card-subtext">SEVERE</h6>
+                        <p class="card-text">197392</p>
+                       </div>
+                      </button>
+                    </div>
+                    <div class="tab-content col-md-10" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"> 
+                        <div class="row align-items-center row-internal">
+                        <div class="col-md-4">
+                            <div class="img-wrapper">
+                                <img src="assets/images/image 27.png" alt="Anaemia detected Adolescents">
+                            </div>
+                        </div>
+                        <div class="col-md-8 d-flex align-items-center">
+                            <div class="col-md-2 card-">
+                                <div class="card-row card-border ">
+                                    <div class="title">
+                                        <span class="bullet-icon blue-icon"></span>
+                                        <span class="card-title ml-3">Boys</span>
+                                       </div>
+                                    <div class="title">
+                                        <span class="bullet-icon pink-icon"></span>
+                                        <span class="card-title ml-3">Girls</span>
+                                       </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-10 pe-2 card-row d-flex p-2 m-1">
+                                <div class="col-md-6 card-border text-center pt-5" style="background-color: #6961CE10;color:#6961CE;"> 
+                                    <div class=" card-inside card-body pt-2">
+                                        <h5 class="card-text">1234</h5>
+                                        <p class="card-subtext">MILD</p>
+                                      </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="row p-0 card-inside">
+                                        <div class="col-md-6 text-center "> 
+                                            <div class="pink card-body card-border pt-3">
+                                            <h5 class="card-text">1234</h5>
+                                            <p class="card-subtext">GIRLS</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 text-center"> 
+                                            <div class="pink card-body card-border pt-3 ">
+                                            <h5 class="card-text">26.25%</h5>
+                                            <p class="card-subtext">GIRLS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row card-inside mt-2">
+                                        <div class="col-md-6 text-center"> 
+                                            <div class="blue card-body card-border pt-3">
+                                              <h5 class="card-text">1234</h5>
+                                              <p class="card-subtext">BOYS</p>
+                                            </div>
+                                          </div>
+                                        <div class="col-md-6 text-center"> 
+                                          <div class="blue card-body card-border pt-3">
+                                            <h5 class="card-text">73.75%</h5>
+                                            <p class="card-subtext">BOYS</p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                   </div>
+            
+                    </div>
+              </div>
+            </div>
+         <!-- graph containers -->
+         <div class="d-flex g- mt-4">
+            <div class="col-md-4 card-row card-border gap-2">
+                <div class="title">
+                    <span class="bullet-icon"></span>
+                    <span class="card-title ml-3">Mild Anemiaa</span>
+                   </div>
+                   <div class="img-container">
+                    <img src="assets/images/image 29.png">
+                   </div>
+            </div>
+            <div class="col-md-4 card-row card-border column-gap-2">
+                <div class="title">
+                    <span class="bullet-icon"></span>
+                    <span class="card-title ml-3">Moderate Anemia</span>
+                   <div class="img-container">
+                </div>
+                <img src="assets/images/image 29-1.png">
+                   </div>
+            </div>
+            <div class="col-md-4 card-row card-border">
+                <div class="title">
+                    <span class="bullet-icon"></span>
+                    <span class="card-title ml-3">Severe Anemia</span>
+                   </div>
+                   <div class="img-container">
+                    <img src="assets/images/image 29-2.png">
+                   </div>
+            </div>
+           </div>
+           <div class="card-row card-border mt-4">
+            <div class="col-md-7">
+                <div class="img-wrapper">
+                    <div class="title">
+                        <span class="bullet-icon"></span>
+                        <span class="card-title ml-3">Trend Graph & Heat map</span>
+                       </div>
+                    <div class="mb-4">
+                        <img src="assets/images/Group 14013.png" alt="Anaemia among Adolescents">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="img-wrapper">
+                
+                </div>
+            </div>
+           </div>
+           <!-- table container -->
+           <div class="card-row card-border mt-4">
+            <table class="rx-table">
+             <div class="title">
+                 <span class="bullet-icon"></span>
+                 <span class="card-title ml-3">Adolescents Detected with Anemia</span>
+             </div>
+               <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Total Adolescents</th>
+                    <th>Adolescents Screened for Anemia</th>
+                    <th colspan="3">Adolescents Detected with Anaemia</th>
+                    <th colspan="3">Adolescents Put on Treatment for Anemia</th>
+                    <th colspan="2">Adolescents Provided 4 IFA tablets in previous month</th>
+                    <th colspan="2">Adolescents Deworming Prophylaxis Given</th>
+                    <th colspan="2">Adolescents received TD Vaccination</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>Mild</th>
+                    <th>Moderate</th>
+                    <th>Severe</th>
+                    <th>Mild</th>
+                    <th>Moderate</th>
+                    <th>Severe</th>
+                    <th>In-School</th>
+                    <th>Out-of-School</th>
+                    <th>In-School</th>
+                    <th>Out of School</th>
+                    <th>TD 10</th>
+                    <th>TD 16</th>
+                </tr>
+               </thead>
+                <tr>
+                  <td>Gujarat</td>
+                  <td>124</td>
+                  <td>12</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                    <td>Gujarat</td>
+                    <td>124</td>
+                    <td>12</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Gujarat</td>
+                    <td>124</td>
+                    <td>12</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Gujarat</td>
+                    <td>124</td>
+                    <td>12</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>Gujarat</td>
+                    <td>124</td>
+                    <td>12</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>Gujarat</td>
+                    <td>124</td>
+                    <td>12</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>Gujarat</td>
+                    <td>124</td>
+                    <td>12</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>Gujarat</td>
+                    <td>124</td>
+                    <td>12</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+              </table>
+           </div> 
+           </div>
+          
+      </div>
+       
+     </div>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dashboard.js" type="text/javascript"></script>
+</body>
+</html>
