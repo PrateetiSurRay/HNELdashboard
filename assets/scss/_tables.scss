@@ -1,0 +1,30 @@
+.rx-table {
+    font-size: 14px;
+    color: #000;
+    line-height: 28px;
+  
+    th, tr, td {
+      border: #D0D4E8 1px solid;
+      text-align: center;
+    }
+  
+    // Table rows
+    tr:nth-child(odd) {
+      background: $table-shade2;
+    }
+    tr:nth-child(even) {
+        background: $table-shade1;
+      }
+  
+    // Table headers
+    th, td {
+      padding: 0 10px;
+    }
+  
+    th {
+      font-weight: normal;
+      color: #fff;
+      background: $table-header;
+      text-align: center;
+    }
+  }
