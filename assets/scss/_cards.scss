@@ -4,10 +4,14 @@
     justify-content: space-around;
     padding:30px 40px;
   }
+
   .primary-cards{
     display: flex;
     flex-direction: row;
     padding:30px 100px;
+    .no-border{
+      border:none;
+    }
   .custom-card {
     flex: 1;
     border-radius: 8px;
@@ -56,6 +60,9 @@
     }
   }
 }
+.card-row{
+  column-gap: 20px;
+}
 .secondary-cards{
   display: flex;
   flex-direction: column;
@@ -73,6 +80,7 @@
     border-radius: 8px;
     background-color: #ffffff35;
     backdrop-filter: blur(4px);
+    
   }
 
   .card {
@@ -105,60 +113,154 @@
     color: #fff;
   }
 }
-.card-container{
-  gap:24px;
-  overflow-x:scroll;
-  .scrollable-x::-webkit-scrollbar {
-      display: none; /* Chrome, Safari, Opera */
-    }
+.carousel-item{
+  a{
+    text-decoration: none;
+  }
+}
+.title{
+  margin:12px;
+}
+.bullet-icon {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 3px;
+  padding-right: 10px;
+}
+span.card-title{
+  font-size:12px;
   
+}
+  .carousel-inner {
+    gap: 1em;
+  }
   .custom-card {
     background-color: #fff;
     border: $border-color 1px solid;
     border-radius: 8px;
-  }
-  
-  .top-column {
-    background-color: $purple-background;
-    color: $purple; 
-    padding: 20px;
-    margin:10px;
-    text-align: center;
-    .card-title {
-      font-size: 18px;
-      font-weight: bold;
+    .card-inner{
+      margin:10px;
     }
+ 
     .card-text {
-      font-size: 14px;
+      font-size: 16px;
+      font-weight: bold;
+      // text-transform: uppercase;
+    }
+
+    .card-subtext {
+      font-size: 10px;
+      color:$text;
     }
   }
-
-  .bottom-columns {
-    margin: 10px;
-
-    .col-md-4 {
-      padding: 10px;
+  a{
+    text-decoration: none;
+  }
+  .column{
+    border-radius: 10px;
+    padding: 8px 60px;
+    margin:10px 10px 0 10px;
+    text-align: center;
+    .card-subtext{
+      color:#676767;
+      font-size: 10px;
+    }
+  }
+  .btn:active,
+  .btn.active {
+    // Your custom styles for the active state
+    background-color: $purple;
+  }
+.mx-2{
+  .nav-link{
+    .active{
+      background-color: $purple;
+    }
+  }
   
+}
+  .top-column {
+    margin-top: 10px;
+    gap:10px;
+    width: 16rem;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+ .bottom-columns {
+    text-align: center;
+    margin-top:10px;
       .card-body {
-        background-color: rgba(105, 97, 206, 0.10);
-        color: $main-color; 
-  
-        .card-title {
-          font-size: 16px;
-          font-weight: bold;
-        }
-  
-        .card-text {
-          font-size: 14px;
+        border-radius: 10px;
+        padding:10px 0;
+        .card-subtext{
+          margin-bottom:0;
         }
       }
-  
-      // Add hover effect if desired
-      &:hover {
-        .card-body {
-          background-color: $tertiary-color;
-        }
-      }
+
+    }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 20%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
     }
   }
+  .card .img-wrapper {
+      max-width: 100%;
+      height: 13em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .card img {
+      max-height: 100%;
+  }
+  @media (max-width: 767px) {
+    .card .img-wrapper {
+      height: 17em;
+    }
+  }
+.nav-active{
+  background-color: $purple;
+  align-items: center;
+  color:#fff;
+  width:auto  
+}
+.card-inside{
+  margin-left:-2px;
+  align-items:center;
+  justify-content:center;
+  .center-card{
+    text-align:center;
+    padding-top:1em;
+  }
+  .card-subtext {
+    font-size: 10px;
+    margin-bottom:10px;
+    color:$text;
+  }
+  .card-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+    // text-transform: uppercase;
+  }
+.purple{
+  padding: 10px;
+}
 }
