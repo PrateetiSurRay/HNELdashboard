@@ -10,3 +10,9 @@
   body, html {
     overflow-x: hidden;
   }
+ .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: $purple;
+    align-self: center;
+    align-items: center;
+    width: 90%;}
