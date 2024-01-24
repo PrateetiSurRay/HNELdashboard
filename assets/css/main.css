@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto&family=Source+Sans+3&display=swap");
+#blue {
+  background-color: rgba(37, 164, 201, 0.062745098);
+}
+
+#red {
+  background-color: rgba(230, 92, 98, 0.062745098);
+}
+
 .purple {
   color: #6961CE;
   background-color: rgba(105, 97, 206, 0.062745098);
@@ -57,28 +65,21 @@
   background-color: #4D8CF8;
 }
 
-.card-border {
-  border: #F1F1F1 1px solid;
-  border-radius: 8px;
-}
-
-.row-internal {
-  background-color: rgba(105, 97, 206, 0.062745098);
-  border-radius: 8px;
-  margin: 30px;
-}
-
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   padding: 30px 40px;
+  align-items: center;
+  height: 100%;
+  max-height: 100vh;
+  overflow: auto;
 }
 
 .primary-cards {
   display: flex;
   flex-direction: row;
-  padding: 30px 100px;
+  max-width: 1024px;
+  column-gap: 40px;
 }
 .primary-cards .no-border {
   border: none;
@@ -87,8 +88,8 @@
   flex: 1;
   border-radius: 8px;
   position: relative;
-  margin: 0 20px;
   padding: 10px;
+  min-width: 180px;
 }
 .primary-cards .custom-card:nth-child(1) {
   background: linear-gradient(to bottom, #25A4C9, #fff);
@@ -126,37 +127,35 @@
   margin-bottom: 20px;
 }
 
-.card-row {
-  column-gap: 20px;
+.card-border {
+  border: #F1F1F1 1px solid;
+  border-radius: 8px;
 }
 
-.secondary-cards {
-  display: flex;
-  flex-direction: column;
-  padding: 0 30px;
+.card-row {
+  padding: 12px;
 }
-.secondary-cards .card-row {
+
+.row-internal {
+  background-color: rgba(105, 97, 206, 0.062745098);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.secondary-cards .card-deck {
   display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
   justify-content: space-around;
   justify-content: center;
 }
-.secondary-cards .custom-card {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.2078431373);
-  backdrop-filter: blur(4px);
-}
 .secondary-cards .card {
-  flex: var(--card-width, 1);
-  margin: 10px;
-  height: 146px;
+  min-height: 146px;
+  margin: 12px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(4px);
-}
-.secondary-cards .card-body {
+  flex: 1 0 2;
   padding: 20px;
   text-align: center;
   display: flex;
@@ -175,16 +174,19 @@
   color: #fff;
 }
 
-.carousel-item a {
-  text-decoration: none;
+.card-padding {
+  padding-right: 24px;
 }
 
 .carousel-slide {
   position: relative;
 }
+.carousel-slide .card-group .carousel-card {
+  padding-right: 20px;
+}
 
 .title {
-  margin: 12px;
+  padding-bottom: 12px;
 }
 
 .bullet-icon {
@@ -199,23 +201,18 @@ span.card-title {
   font-size: 12px;
 }
 
-.carousel-inner {
-  gap: 1em;
-}
-
 .custom-card {
   background-color: #fff;
   border: #F1F1F1 1px solid;
   border-radius: 8px;
 }
-.custom-card .card-inner {
-  margin: 10px;
-}
-.custom-card .card-text {
+
+.card-text {
   font-size: 16px;
   font-weight: bold;
 }
-.custom-card .card-subtext {
+
+.card-subtext {
   font-size: 10px;
   color: #676767;
 }
@@ -226,8 +223,6 @@ a {
 
 .column {
   border-radius: 10px;
-  padding: 8px 60px;
-  margin: 10px 10px 0 10px;
   text-align: center;
 }
 .column .card-subtext {
@@ -235,15 +230,10 @@ a {
   font-size: 10px;
 }
 
-.btn:active,
-.btn.active {
-  background-color: #6961CE;
-}
-
 .top-column {
   margin-top: 10px;
   gap: 10px;
-  width: 16rem;
+  width: 100%;
   border-radius: 10px;
   padding: 10px 20px;
   text-align: center;
@@ -252,6 +242,7 @@ a {
 .bottom-columns {
   text-align: center;
   margin-top: 10px;
+  --bs-gutter-x: 10px;
 }
 .bottom-columns .card-body {
   border-radius: 10px;
@@ -288,21 +279,14 @@ a {
     height: 17em;
   }
 }
-.nav-active {
-  background-color: #6961CE;
-  align-items: center;
-  color: #fff;
-  width: auto;
-}
-
 .card-inside {
-  margin-left: -2px;
   align-items: center;
   justify-content: center;
 }
 .card-inside .center-card {
   text-align: center;
-  padding-top: 1em;
+  padding: 1em 0;
+  border-radius: 10px;
 }
 .card-inside .card-subtext {
   font-size: 10px;
@@ -354,12 +338,54 @@ body, html {
   overflow-x: hidden;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #6961CE;
+.custom-nav-pills .nav-pills .nav-link {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0.1rem;
+  padding: 0.5rem 1rem;
+}
+.custom-nav-pills .nav-pills .nav-link.active,
+.custom-nav-pills .nav-pills .show > .nav-link {
+  background-color: transparent !important;
+}
+.custom-nav-pills .nav-pills .nav-link.active {
+  display: flex;
+  box-sizing: border-box;
+  color: #FFF !important;
+  background-color: #6961CE !important;
   align-self: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
+}
+.custom-nav-pills .nav-pills .nav-link.active .card-subtext {
+  color: #FFF;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0;
+  margin: 0%;
+}
+
+.custom-dropdown {
+  position: relative;
+}
+.custom-dropdown .dropdown-menu .title {
+  font-size: 10px;
+  padding-left: 10px;
+}
+.custom-dropdown .card-body {
+  border-radius: 10px;
+  padding: 10px 16px;
+}
+
+.custom-dropdown:hover .dropdown-menu {
+  display: block;
+  border: none;
+  position: absolute;
+  top: -100%;
+  left: 100%;
 }
 
 .main-container {
@@ -399,7 +425,7 @@ body, html {
   color: #000;
 }
 .dashboard-container .dashboard-wrapper {
-  margin: 0 30px;
+  margin: 0 24px;
 }
 .dashboard-container .card-row {
   background-color: #fff;
@@ -409,7 +435,7 @@ body, html {
   background-color: #F7f7f7;
 }
 .dashboard-internal-container .dashboard-wrapper {
-  margin: 0 30px;
+  margin: 0 24px;
 }
 .dashboard-internal-container li {
   padding: 30px 0 0 30px;
@@ -429,6 +455,10 @@ body, html {
 }
 .dashboard-internal-container .card-row {
   background-color: #fff;
+}
+
+.carousel-card .carousel .card-group {
+  overflow-y: visible;
 }
 
 button {
