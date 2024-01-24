@@ -13,53 +13,121 @@
     <!-- main container -->
      <div class="dashboard-container">
         <h2 class="page-title">Health Indicator</h2>
-       <div class="dashboard-wrapper">
+        <div class="dashboard-wrapper">
         <!-- carousel view of cards -->
-        <div class="carousel-slide">
-          <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
+         <div class="carousel-slide">
+          <div id="carouselExampleCaptions" class="carousel  slide" data-bs-ride="false">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                  <div class="card-group justify-content-center">
-                      <div class="custom-card me-3">
-                          <div class="card-inner">
-                           <span class="bullet-icon purple-icon"></span>
-                           <span class="card-title ml-3">Screened for Anaemia</span>
-                           <div class="card-body purple top-column">
-                               <h6 class="card-subtext">TOTAL</h6>
-                               <p class="card-text">197392</p>
-                           </div>
-                             <div class="row bottom-columns">
+                  <div class="card-group">
+                    <div class="col-md-3 carousel-card">
+                      <div class="custom-card card-row">
+                        <div class="title">
+                         <span class="bullet-icon purple-icon"></span>
+                        <span class="card-title ml-3">Screened for Anaemia</span>
+                        </div>
+                       <div class="card-inner">
+                        <div class="card-body purple top-column">
+                            <h6 class="card-subtext">TOTAL</h6>
+                            <p class="card-text">197392</p>
+                        </div>
+                          <div class="row bottom-columns">
+                            
+                            <div class="col-md-4">
                                
-                               <div class="col-md-4">
-                                   <!-- <button aria-label="Tooltip Bottom" tooltip-position="bottom"> -->
-                                 <div class="purple card-body">
-                                   <h5 class="card-text">1234</h5>
-                                   <p class="card-subtext">MILD</p>
-                                 </div>
-                               </div>
-                               <!-- </button> -->
-                               <div class="col-md-4">
-                                 <div class="purple  card-body">
-                                   <h5 class="card-text">4568</h5>
-                                   <p class="card-subtext">MODERATE</p>
-                                 </div>
-                               </div>
-                               <div class="col-md-4">
-                                 <div class="purple card-body">
-                                   <h5 class="card-text">93176</h5>
-                                   <p class="card-subtext">SEVERE</p>
-                                 </div>
-                               </div>
-                             </div>
+                              <div class="custom-dropdown dropend">
+                                <button class="btn" type="button" id="customDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <div class="purple card-body">
+                                    <h5 class="card-text">1234</h5>
+                                    <p class="card-subtext">MILD</p>
+                                  </div>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="customDropdown">
+                                 
+                                    <div class="title">MILD</div>
+                                 
+                                  <li><a class="dropdown-item" href="#">
+                                    <div class="purple card-body">
+                                    <h5 class="card-text">1234</h5>
+                                    <p class="card-subtext">MODERATE</p>
+                                  </div>
+                                </a></li>
+                                  <li><a class="dropdown-item" href="#">
+                                    <div class="purple card-body">
+                                    <h5 class="card-text">1234</h5>
+                                    <p class="card-subtext">MODERATE</p>
+                                  </div>
+                                </a></li>
+                                </ul>
+                              </div>
+                              
+                            </div>
+                            <div class="col-md-4">
+
+                              <div class="custom-dropdown dropup">
+                                <button class="btn" type="button" id="customDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <div class="purple card-body">
+                                    <h5 class="card-text">1234</h5>
+                                    <p class="card-subtext">MODERATE</p>
+                                  </div>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="customDropdown">
+                                  <div class="title">MILD</div>
+                                  <li><a class="dropdown-item" href="#">
+                                    <div class="purple card-body">
+                                    <h5 class="card-text">1234</h5>
+                                    <p class="card-subtext">MODERATE</p>
+                                  </div>
+                                </a></li>
+                                  <li><a class="dropdown-item" href="#">
+                                    <div class="purple card-body">
+                                    <h5 class="card-text">1234</h5>
+                                    <p class="card-subtext">MODERATE</p>
+                                  </div>
+                                </a></li>
+                                </ul>
+                              </div>
+
+                            </div>
+                            <div class="col-md-4">
+
+                              <div class="custom-dropdown dropstart">
+                                <button class="btn" type="button" id="customDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <div class="purple card-body">
+                                    <h5 class="card-text">1234</h5>
+                                    <p class="card-subtext">MILD</p>
+                                  </div>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="customDropdown">
+                                 
+                                    <div class="title">MILD</div>
+                                 
+                                  <li><a class="dropdown-item" href="#">
+                                    <div class="purple card-body">
+                                    <h5 class="card-text">1234</h5>
+                                    <p class="card-subtext>">GIRLS</p>
+                                  </div>
+                                </a></li>
+                                  <li><a class="dropdown-item" href="#">
+                                    <div class="purple card-body">
+                                    <h5 class="card-text">1234</h5>
+                                    <p class="card-subtext">BOYS</p>
+                                  </div>
+                                </a></li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                        </div>
-                      <div class="custom-card me-3">
+                    </div>
+                    </div>
+                      <div class="col-md-3 carousel-card">
+                        <div class="custom-card card-row ">
+                          <div class="title">
+                            <span class="bullet-icon red-icon"></span>
+                           <span class="card-title ml-3"><a href="dashboard-internal.html">Adolescents detected with anaemia</a></span>
+                           </div>
                           <div class="card-inner">
-                           <span class="bullet-icon red-icon"></span>
-                           <span class="card-title ml-3">
-                            <a href="dashboard-internal.html">
-                              Adolescents detected with Anaemia</a>
-                            </span>
                            <div class="card-body red top-column">
                                <h6 class="card-subtext">TOTAL</h6>
                                <p class="card-text">197392</p>
@@ -89,110 +157,121 @@
                              </div>
                           </div>
                        </div>
-                       <div class="custom-card me-3">
-                          <div class="card-inner">
-                           <span class="bullet-icon blue-icon"></span>
-                           <span class="card-title ml-3">Adolescents put on treatment for anemia</span>
-                           <div class="card-body blue top-column">
-                               <h6 class="card-subtext">TOTAL</h6>
-                               <p class="card-text">197392</p>
-                           </div>
-                             <div class="row bottom-columns">
-                               
-                               <div class="col-md-4">
-                                   <!-- <button aria-label="Tooltip Bottom" tooltip-position="bottom"> -->
-                                 <div class="blue card-body">
-                                   <h5 class="card-text">1234</h5>
-                                   <p class="card-subtext">MILD</p>
-                                 </div>
-                               </div>
-                               <!-- </button> -->
-                               <div class="col-md-4">
-                                 <div class="blue  card-body">
-                                   <h5 class="card-text">4568</h5>
-                                   <p class="card-subtext">MODERATE</p>
-                                 </div>
-                               </div>
-                               <div class="col-md-4">
-                                 <div class="blue card-body">
-                                   <h5 class="card-text">93176</h5>
-                                   <p class="card-subtext">SEVERE</p>
-                                 </div>
-                               </div>
-                             </div>
+                      </div>
+                      <div class="col-md-3 carousel-card">
+                        <div class="custom-card card-row">
+                          <div class="title">
+                            <span class="bullet-icon blue-icon"></span>
+                             <span class="card-title ml-3">Adolescents put on treatment for anemia</span>
                           </div>
-                       </div>
-                       <div class="custom-card me-3">
-                          <div class="card-inner">
-                           <span class="bullet-icon orange-icon"></span>
-                           <span class="card-title ml-3">In-school Adolescents given 4 IFA tablets</span>
-                           <div class="card-body orange top-column">
-                               <h6 class="card-subtext">TOTAL</h6>
-                               <p class="card-text">197392</p>
-                           </div>
-                             <div class="row bottom-columns">
-                               
-                               <div class="col-md-4">
-                                   <!-- <button aria-label="Tooltip Bottom" tooltip-position="bottom"> -->
-                                 <div class="orange card-body">
-                                   <h5 class="card-text">1234</h5>
-                                   <p class="card-subtext">MILD</p>
-                                 </div>
-                               </div>
-                               <!-- </button> -->
-                               <div class="col-md-4">
-                                 <div class="orange  card-body">
-                                   <h5 class="card-text">4568</h5>
-                                   <p class="card-subtext">MODERATE</p>
-                                 </div>
-                               </div>
-                               <div class="col-md-4">
-                                 <div class="orange card-body">
-                                   <h5 class="card-text">93176</h5>
-                                   <p class="card-subtext">SEVERE</p>
-                                 </div>
-                               </div>
+                            <div class="card-inner">
+                             <div class="card-body blue top-column">
+                                 <h6 class="card-subtext">TOTAL</h6>
+                                 <p class="card-text">197392</p>
                              </div>
+                               <div class="row bottom-columns">
+                                 
+                                 <div class="col-md-4">
+                                     <!-- <button aria-label="Tooltip Bottom" tooltip-position="bottom"> -->
+                                   <div class="blue card-body">
+                                     <h5 class="card-text">1234</h5>
+                                     <p class="card-subtext">MILD</p>
+                                   </div>
+                                 </div>
+                                 <!-- </button> -->
+                                 <div class="col-md-4">
+                                   <div class="blue  card-body">
+                                     <h5 class="card-text">4568</h5>
+                                     <p class="card-subtext">MODERATE</p>
+                                   </div>
+                                 </div>
+                                 <div class="col-md-4">
+                                   <div class="blue card-body">
+                                     <h5 class="card-text">93176</h5>
+                                     <p class="card-subtext">SEVERE</p>
+                                   </div>
+                                 </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                       <div class="col-md-3 carousel-card">
+                        <div class="custom-card card-row">
+                          <div class="title">
+                            <span class="bullet-icon orange-icon"></span>
+                             <span class="card-title ml-3">In-school Adolescents given 4 IFA tablets</span>
                           </div>
+                            <div class="card-inner">   
+                             <div class="card-body orange top-column">
+                                 <h6 class="card-subtext">TOTAL</h6>
+                                 <p class="card-text">197392</p>
+                             </div>
+                               <div class="row bottom-columns">
+                                 
+                                 <div class="col-md-4">
+                                     <!-- <button aria-label="Tooltip Bottom" tooltip-position="bottom"> -->
+                                   <div class="orange card-body">
+                                     <h5 class="card-text">1234</h5>
+                                     <p class="card-subtext">MILD</p>
+                                   </div>
+                                 </div>
+                                 <!-- </button> -->
+                                 <div class="col-md-4">
+                                   <div class="orange  card-body">
+                                     <h5 class="card-text">4568</h5>
+                                     <p class="card-subtext">MODERATE</p>
+                                   </div>
+                                 </div>
+                                 <div class="col-md-4">
+                                   <div class="orange card-body">
+                                     <h5 class="card-text">93176</h5>
+                                     <p class="card-subtext">SEVERE</p>
+                                   </div>
+                                 </div>
+                               </div>
+                            </div>
+                         </div>
                        </div>
                   </div>
               </div>
               <div class="carousel-item">
                   <div class="card-group">
-                      <div class="custom-card">
-                          <div class="card-inner">
+                      <div class="custom-card card-row">
+                          <div class="title">
                            <span class="bullet-icon dark-blue-icon"></span>
                            <span class="card-title ml-3">Out of school Adolescents given 4 IFA tablets</span>
-                           <div class="card-body dark-blue top-column">
-                               <h6 class="card-subtext">TOTAL</h6>
-                               <p class="card-text">197392</p>
-                           </div>
-                             <div class="row bottom-columns">
-                               
-                               <div class="col-md-4">
-                                   <!-- <button aria-label="Tooltip Bottom" tooltip-position="bottom"> -->
-                                 <div class="dark-blue card-body">
-                                   <h5 class="card-text">1234</h5>
-                                   <p class="card-subtext">MILD</p>
-                                 </div>
-                               </div>
-                               <!-- </button> -->
-                               <div class="col-md-4">
-                                 <div class="dark-blue  card-body">
-                                   <h5 class="card-text">4568</h5>
-                                   <p class="card-subtext">MODERATE</p>
-                                 </div>
-                               </div>
-                               <div class="col-md-4">
-                                 <div class="dark-blue card-body">
-                                   <h5 class="card-text">93176</h5>
-                                   <p class="card-subtext">SEVERE</p>
-                                 </div>
-                               </div>
-                             </div>
                           </div>
+                          <div class="card-inner">
+                            <div class="card-body dark-blue top-column">
+                              <h6 class="card-subtext">TOTAL</h6>
+                              <p class="card-text">197392</p>
+                          </div>
+                          <div class="row bottom-columns">
+                              
+                              <div class="col-md-4">
+                                  <!-- <button aria-label="Tooltip Bottom" tooltip-position="bottom"> -->
+                                <div class="dark-blue card-body">
+                                  <h5 class="card-text">1234</h5>
+                                  <p class="card-subtext">MILD</p>
+                                </div>
+                              </div>
+                              <!-- </button> -->
+                              <div class="col-md-4">
+                                <div class="dark-blue  card-body">
+                                  <h5 class="card-text">4568</h5>
+                                  <p class="card-subtext">MODERATE</p>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="dark-blue card-body">
+                                  <h5 class="card-text">93176</h5>
+                                  <p class="card-subtext">SEVERE</p>
+                                </div>
+                              </div>
+                          </div>
+                          </div>    
                        </div>
-                      </div>
+                  </div>
               </div>
           </div>
           </div>
@@ -204,19 +283,23 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-        </div>
+         </div>
           <!-- graph containers -->
-          <div class="d-flex mt-4 gap-2">
-           <div class="card-row card-border col-md-8">
-               <div class="img-wrapper">
-                   <div class="title">
-                    <span class="bullet-icon"></span>
-                    <span class="card-title ml-3">Overview of Anaemia among Adolescents</span>
-                   </div>
-                  <div class="ms-5">
-                    <img src="assets/images/image 35.png" alt="Anaemia among Adolescents">
+          <div class="d-flex mt-4 ">
+           <div class="col-md-8 card-padding">
+            <div class="card-row card-border ">
+              <div class="img-wrapper">
+                  <div class="title">
+                   <span class="bullet-icon"></span>
+                   <span class="card-title ml-3">Overview of Anaemia among Adolescents</span>
                   </div>
-               </div>
+                 <div class="ms-5">
+                  <div class="img-container">
+                    <img class="img-fluid" src="assets/images/image 35.png">
+                  </div>
+                 </div>
+              </div>
+          </div>
            </div>
            <div class="card-row card-border col-md-4">
                <div class="img-wrapper">
@@ -224,7 +307,9 @@
                     <span class="bullet-icon"></span>
                     <span class="card-title ml-3">Screened for Anaemia</span>
                    </div>
-                   <img src="assets/images/Group 14012.png" alt="Anaemia detected Adolescents">
+                   <div class="img-container">
+                    <img class="img-fluid" src="assets/images/Group 14012.png">
+                  </div>
                </div>
            </div>
           </div>
@@ -235,9 +320,9 @@
                     <span class="bullet-icon"></span>
                     <span class="card-title ml-3">Anaemia Detected Adolescents</span>
                    </div>
-                   <div class="mb-4">
-                    <img src="assets/images/Group 14013.png" alt="Anaemia among Adolescents">
-                   </div>
+                   <div class="img-container">
+                    <img class="img-fluid" src="assets/images/Group 14013.png">
+                  </div>
                </div>
            </div>
            <div class="col-md-5">
@@ -420,10 +505,5 @@
           </div>   
        </div>
      </div>
-</body>
-</html>>
-       
-     </div>
-    <script src="dashboard.js" type="text/javascript"></script>
 </body>
 </html>
