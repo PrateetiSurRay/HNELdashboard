@@ -24,7 +24,12 @@ $orange-background:#F49C7910;
 $background-color: #F7f7f7;
 $border-color: #F1F1F1;
 $text:#676767;
-
+#blue{
+    background-color: #25A4C910;
+  }
+  #red{
+    background-color: #E65C6210;;
+  }
 .purple{
     color:$purple;
     background-color: $purple-background;
@@ -70,13 +75,7 @@ $text:#676767;
 .dark-blue-icon{
     background-color:$dark-blue;
 }
-.card-border{
-    border:$border-color 1px solid;
-    border-radius: 8px;
-}
-.row-internal{
-    background-color: $purple-background;
-    border-radius: 8px;
-    margin:30px;
-}
+
+
+
 
